@@ -1,0 +1,67 @@
+.home {
+  padding-top: 30px;
+}
+.bookmarker {
+  font-size: 32px;
+  color: #aaa;
+  font-weight: 700;
+}
+.home-div {
+  border-bottom: rgb(137, 136, 136) 1px solid;
+  padding: 40px 0;
+}
+.bookmark-box-item {
+  padding: 40px 110px;
+  width: 100%;
+  background-color: #eeeeee;
+  margin-top: 20px;
+}
+.bookmark-box-item label {
+  font-size: 18px;
+}
+.bookmark-output {
+  margin-top: 20px;
+}
+.bookmark-output-box {
+  background-image: linear-gradient(#eee, #fff);
+  width: 100%;
+  padding: 25px 20px;
+  margin-bottom: 20px;
+}
+.bookmark-output-box h2 {
+  width: 30%;
+}
+.bookmark-output-box a {
+  padding: 7px 15px;
+  font-size: 15px;
+  margin: 15px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: fit-content;
+  text-decoration: none;
+  background-color: #1167c4;
+  color: white;
+  border: 1px solid #1167c4;
+}
+
+.footer-parag {
+  width: 100%;
+  padding: 30px 0;
+  border-top: 1px rgb(137, 136, 136) solid;
+  margin-top: 10px;
+}
+footer p {
+  color: #aaa;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media screen and (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1250px;
+  }
+}

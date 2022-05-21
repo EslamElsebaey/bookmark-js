@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>My Bookmarker</title>
+</head>
+
+<body>
+  <div class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-div">
+            <h1 class="text-capitalize bookmarker">bookmarker</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bookmark-box">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-12 justify-content-center d-flex">
+          <div class="bookmark-box-item  text-center ">
+            <h3 class="mb-5">Bookmark your favorite sites</h3>
+            <label class="mb-3  text-black fw-bolder">Site Name</label>
+            <input type="text" placeholder="Bookmark Name" id="bookmarkName" class="w-100 mb-2 ">
+            <label class="mb-3  text-black fw-bolder">Site URL</label>
+            <input type="text" placeholder="Website URL" id="websiteUrl" class="w-100 mb-3 ">
+            <button class="btn btn-primary" onclick="addSite()">Submit</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bookmark-output">
+    <div class="container">
+      <div class="row" id="bookmarkOutputBox">
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-parag">
+            <p>© 2019 Bookmarker Inc.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
