@@ -1,6 +1,6 @@
-var bookmarkName = document.getElementById("bookmarkName");
-var websiteUrl = document.getElementById("websiteUrl");
-var sitesArray;
+let bookmarkName = document.getElementById("bookmarkName");
+let websiteUrl = document.getElementById("websiteUrl");
+let sitesArray;
 
 if (localStorage.sites == null) {
   sitesArray = [];
@@ -9,12 +9,12 @@ if (localStorage.sites == null) {
   showSites();
 }
 
-var regex =
+let regex =
   /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/;
 function addSite() {
   if (bookmarkName.value != "" && websiteUrl.value != "") {
     if (websiteUrl.value.match(regex)) {
-      var sites = {
+      let sites = {
         bookmarkName: bookmarkName.value,
         websiteUrl: websiteUrl.value,
       };
@@ -33,8 +33,8 @@ function addSite() {
 
 // show sites
 function showSites() {
-  var myDivs = "";
-  for (var i = 0; i < sitesArray.length; i++) {
+  let myDivs = "";
+  for (let i = 0; i < sitesArray.length; i++) {
     myDivs += `<div class="col-md-12 justify-content-center d-flex">
           <div class="bookmark-output-box d-flex  align-items-center" >
             <h2>${sitesArray[i].bookmarkName}</h2>
